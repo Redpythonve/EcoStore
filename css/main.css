@@ -1,19 +1,160 @@
 body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  background-color: #fbff00;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 nav {
-  background-color: #FFEFE7;
-  width: 100%;
-  height: 80px;
+  width: auto;
+  padding: 30px;
+  color: #7C6A0A;
+  display: flex;
+  justify-content: space-between;
+}
+nav p {
+  font-size: 1.5em;
+}
+nav form {
+  margin-top: 15px;
+  display: flex;
+  background-color: #fff;
+  border-radius: 35px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+nav form input[type=text]:first-child::-moz-placeholder {
+  color: #9b9898;
+  font-style: bold;
+}
+nav form input[type=text]:first-child::placeholder {
+  color: #9b9898;
+  font-style: bold;
+}
+nav input[type=text] {
+  margin-left: 40px;
+  width: 80vh;
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 15px;
+  font-size: 16px;
+}
+nav input[type=submit] {
+  background-color: #0064fa;
+  color: #fff;
+  border: none;
+  padding: 15px 20px;
+  cursor: pointer;
+}
+nav .icons {
+  display: flex;
+  gap: 15px;
+}
+nav .icons button {
+  background: none;
+  border-style: none;
 }
 
 main {
-  background-color: #FFEFE7;
+  background-color: #fbff00;
 }
-
+main article {
+  color: #7C6A0A;
+  width: auto;
+  padding-left: 0px;
+  padding-right: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+main article .impact-section {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+main article .impact-section h1 {
+  font-size: 3em;
+  margin-top: 0px;
+  padding-bottom: 0px;
+}
+main article .impact-section p {
+  margin-top: 0px;
+  padding-top: 0px;
+  font-size: 1.5em;
+}
+main article .impact-section button {
+  width: 12vw;
+  padding: 4px;
+  background-color: #0064fa;
+  border-radius: 35px;
+  border-style: none;
+}
+main article .impact-section button h3 {
+  color: white;
+  padding: 2px;
+}
+main article img {
+  width: 25vw;
+  height: 40vw;
+  border-radius: 10%;
+  box-shadow: 5px 5px 10px rgb(172, 175, 1);
+}
+main section {
+  width: auto;
+  height: auto;
+  margin: 20px 0px 20px 0px;
+  padding: 40px;
+}
+main section h2 {
+  color: #7C6A0A;
+  font-size: 1.5em;
+}
+main section .health-care h2, main section .furniture h2 {
+  font-weight: 300;
+  padding-bottom: 60px;
+}
+main section .health-care .car-section, main section .furniture .car-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  -moz-column-gap: 200px;
+       column-gap: 200px;
+  row-gap: 80px;
+}
+main section .health-care .car-section .product-card, main section .furniture .car-section .product-card {
+  width: 14vw;
+  height: 50vh;
+  padding: 20px;
+  background-color: white;
+  color: #7C6A0A;
+  border-radius: 8px;
+  border-style: none;
+  box-shadow: 5px 5px 10px rgb(172, 175, 1);
+}
+main section .health-care .car-section .product-card .icon, main section .furniture .car-section .product-card .icon {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 8px;
+}
+main section .health-care .car-section .product-card .product-image, main section .furniture .car-section .product-card .product-image {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main section .health-care .car-section .product-card .product-image img, main section .furniture .car-section .product-card .product-image img {
+  width: 12vw;
+  height: 32vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+}
 footer {
   background-color: #FA9500;
   width: 100%;

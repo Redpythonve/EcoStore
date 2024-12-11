@@ -1,26 +1,237 @@
-$primary-color:#FFEFE7;
+
+$primary-color:#fbff00;
 $secondary-color:#FFDAC6;
 $tertiary-color:#BABD8D;
 $primary-text-color:#7C6A0A;
 $font-stack: 'IBM Plex Sans' , sans-serif;
+$paragraph: 1.5em;
 
 
 
 body{
     
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    background-color: $primary-color;
+    font-family: $font-stack;
+    
 }
 
 nav{
-    background-color: $primary-color;
-    width: 100%;
-    height: 80px;
+    width: auto;
+    padding: 30px;
+    color: #7C6A0A;
+    display: flex;
+    justify-content: space-between;
+
+
+    p{
+        
+        font-size: $paragraph;
+    }
+
+
+    form {
+        
+        margin-top: 15px;
+        display: flex;
+        background-color: #fff;
+        border-radius: 35px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        overflow: hidden;
+        input[type="text"]:first-child::placeholder {
+            color: #9b9898;
+            font-style: bold;
+          }
+    }
+
+    input[type="text"] {
+        margin-left: 40px;
+        width: 80vh;
+        flex: 1;
+        border: none;
+        outline: none;
+        padding: 15px;
+        font-size: 16px;
+       
+    }
+
+    input[type="submit"] {
+        background-color: #0064fa;
+        color: #fff;
+        border: none;
+        padding: 15px 20px;
+        cursor: pointer;
+    }
+    .icons{
+        
+        display: flex;
+        gap: 15px;
+
+
+        button{
+            background: none;
+            border-style: none;
+
+        }
+
+    }
 }
 
 main{
+
+    
     background-color: $primary-color;
+
+    article{
+        color: $primary-text-color;
+        width: auto;
+        padding-left: 0px;
+        padding-right: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+  
+        .impact-section{
+            margin: 0px;
+            padding: 0px;
+            display: flex;
+            flex-direction: column;
+            gap: 1px;
+
+
+            h1{
+                font-size: 3em;
+                margin-top: 0px;
+                padding-bottom: 0px;
+
+            }
+    
+            p{
+                margin-top: 0px;
+                padding-top: 0px;
+                font-size: $paragraph;
+            }
+            
+            button{
+                width: 12vw;
+                padding: 4px;
+                background-color: #0064fa;
+                border-radius: 35px;
+                border-style: none;
+    
+                h3{
+                    color: white;
+                    padding: 2px;
+    
+                }
+            }   
+        }
+       
+
+        img{
+            width: 25vw;
+            height: 40vw;
+            border-radius: 10%;
+            box-shadow: 5px 5px 10px rgb(172, 175, 1); 
+        }
+        
+    }
+
+    section{
+        width: auto;
+        height: auto;
+        margin: 20px 0px 20px 0px;
+        padding: 40px;
+
+        h2{
+            color: $primary-text-color;
+            font-size: 1.5em;
+        }
+
+        .health-care{
+            
+
+            h2{
+                font-weight: 300;
+                padding-bottom: 60px;
+            }
+
+
+            .car-section{
+
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                align-items: center;
+                column-gap: 200px;
+                row-gap: 80px;
+               
+
+
+
+                .product-card{
+                    width: 14vw;
+                    height: 50vh;
+                    padding: 20px;
+                    background-color: white;
+                    color: $primary-text-color;
+                    border-radius: 8px;
+                    border-style: none;
+                    box-shadow: 5px 5px 10px rgb(172, 175, 1); 
+
+                    .icon{
+                        width: 100%;
+                        display: flex;
+                        justify-content: flex-end;
+                        padding-bottom: 8px;
+
+                    }
+    
+                    .product-image{
+    
+                        width: 100%;
+                        height: auto;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+    
+                        img{
+                            width: 12vw;
+                            height: 32vh;
+                            object-fit: cover;
+                            border-radius: 8px;
+                        }
+    
+    
+    
+    
+                    }
+    
+                    
+    
+                   
+    
+                }
+    
+
+
+
+
+            }
+
+
+
+            
+
+
+           
+        }
+
+        .furniture{
+            @extend .health-care
+        }
+    }
 }
 
 footer{
